@@ -1,0 +1,5 @@
+var dvr=$('.dropify').dropify({
+	
+	
+});
+
