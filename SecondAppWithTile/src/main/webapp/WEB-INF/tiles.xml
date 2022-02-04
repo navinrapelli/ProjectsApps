@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+
+
+<tiles-definitions>
+
+	<definition name="welcome" template="/WEB-INF/views/welcome.jsp">
+		<put-attribute name="title" value="" />
+		<put-attribute name="header" value="/WEB-INF/tiles/header.jsp" />
+		<put-attribute name="body" value="" />
+		<put-attribute name="footer" value="/WEB-INF/tiles/footer.jsp" />
+	</definition>
+	
+	<definition name="login" extends="welcome" > 
+	
+	  <put-attribute name="title" value="homepage" ></put-attribute>
+	  		<put-attribute name="body" value="/WEB-INF/tiles/login.jsp" />
+	</definition>
+	
+     <definition name="product" extends="welcome" > 
+	
+	  <put-attribute name="title" value="productpage" ></put-attribute>
+	  		<put-attribute name="body" value="/WEB-INF/tiles/product.jsp" />
+	</definition>
+
+   <definition name="contact" extends="welcome" > 
+	
+	  <put-attribute name="title" value="contactpage" ></put-attribute>
+	  		<put-attribute name="body" value="/WEB-INF/tiles/contact.jsp" />
+	</definition>
+	
+	<definition name="regform" extends="welcome" > 
+	
+	  <put-attribute name="title" value="regformpage" ></put-attribute>
+	  		<put-attribute name="body" value="/WEB-INF/tiles/regform.jsp" />
+	</definition>
+	
+	
+	
+	<definition name="profilewel" template="/WEB-INF/views/profilewel.jsp">
+		<put-attribute name="title" value="" />
+		<put-attribute name="headerpro" value="/WEB-INF/tiles/headerpro.jsp" />
+		<put-attribute name="body" value="" />
+		<put-attribute name="footer" value="/WEB-INF/tiles/footer.jsp" />
+	</definition>
+	
+	<definition name="profile" extends="profilewel" > 
+	
+	  <put-attribute name="title" value="profilepage" ></put-attribute>
+	  		<put-attribute name="body" value="/WEB-INF/tiles/profile.jsp" />
+	</definition>
+	
+   <definition name="product" extends="profilewel" > 
+	
+	  <put-attribute name="title" value="productpage" ></put-attribute>
+	  		<put-attribute name="body" value="/WEB-INF/tiles/product.jsp" />
+	</definition>
+	
+		<definition name="updatet" extends="profilewel" > 
+	
+	  <put-attribute name="title" value="updatepage" ></put-attribute>
+	  		<put-attribute name="body" value="/WEB-INF/tiles/updatet.jsp" />
+	</definition>
+	
+	
+    <definition name="admin" template="/WEB-INF/views/admin.jsp">
+		<put-attribute name="title" value="" />
+		<put-attribute name="headerad" value="/WEB-INF/tiles/headerad.jsp" />
+		<put-attribute name="body" value="" />
+		<put-attribute name="footer" value="/WEB-INF/tiles/footer.jsp" />
+	</definition>
+
+	
+<definition name="profileadmin" extends="admin" > 
+	
+	  <put-attribute name="title" value="profilepage" ></put-attribute>
+	  		<put-attribute name="body" value="/WEB-INF/tiles/profileadmin.jsp" />
+	</definition>
+
+	
+<definition name="main" extends="admin" > 
+	
+	  <put-attribute name="title" value="profilepage" ></put-attribute>
+	  		<put-attribute name="body" value="/WEB-INF/tiles/main.jsp" />
+	</definition>
+
+</tiles-definitions>
+
+
